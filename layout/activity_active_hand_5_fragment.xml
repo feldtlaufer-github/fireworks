@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="500dp"
+    android:layout_height="135dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="huecomundo.muhich.fireworks_prime.active_hand_5_fragment">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivActiveHandC"
+        android:src="@drawable/card_back"
+        android:clickable="true"
+        android:onClick="activeCardAction"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivActiveHandD"
+        android:src="@drawable/card_back"
+        android:onClick="activeCardAction"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivActiveHandC" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivActiveHandE"
+        android:src="@drawable/card_back"
+        android:onClick="activeCardAction"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivActiveHandD"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivActiveHandB"
+        android:src="@drawable/card_back"
+        android:onClick="activeCardAction"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/ivActiveHandC" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivActiveHandA"
+        android:src="@drawable/card_back"
+        android:onClick="activeCardAction"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/ivActiveHandB"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

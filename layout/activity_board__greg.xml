@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="huecomundo.muhich.fireworks_prime.Board_Greg"
+    android:background="@drawable/table">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="135dp"
+        android:id="@+id/active_hand_container"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="350dp"
+        android:id="@+id/left_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"></RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/up_left_container" />
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="135dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/up_right_container" />
+
+    <RelativeLayout
+        android:layout_width="150dp"
+        android:layout_height="350dp"
+        android:id="@+id/right_container"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="135dp"
+        android:id="@+id/up_container"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"></RelativeLayout>
+
+    <ListView
+        android:layout_width="450dp"
+        android:layout_height="100dp"
+        android:id="@+id/lvTurnLog"
+        android:layout_above="@+id/active_hand_container"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ivBombCounter" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivBombCounter"
+        android:src="@drawable/bomb_3"
+        android:layout_below="@+id/up_left_container"
+        android:layout_toEndOf="@+id/left_container" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivClueCounter"
+        android:src="@drawable/clues_8"
+        android:layout_above="@+id/active_hand_container"
+        android:layout_toEndOf="@+id/left_container" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivDeck"
+        android:src="@drawable/deck"
+        android:layout_below="@+id/up_right_container"
+        android:layout_toStartOf="@+id/right_container"
+        android:onClick="displayDeckCount" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/ivDiscard"
+        android:src="@drawable/discard"
+        android:layout_above="@+id/active_hand_container"
+        android:layout_toStartOf="@+id/right_container"
+        android:onClick="popupDiscard" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayedRed"
+        android:layout_below="@+id/up_container"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/lvTurnLog"
+        android:src="@drawable/card_front" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayedYellow"
+        android:layout_below="@+id/up_right_container"
+        android:layout_toEndOf="@+id/ivPlayedRed"
+        android:layout_alignBottom="@+id/ivPlayedRed"
+        android:src="@drawable/card_front" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayedGreen"
+        android:layout_above="@+id/lvTurnLog"
+        android:layout_toEndOf="@+id/ivPlayedYellow"
+        android:layout_below="@+id/up_right_container"
+        android:src="@drawable/card_front" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayedBlue"
+        android:layout_below="@+id/up_left_container"
+        android:layout_toStartOf="@+id/ivPlayedRed"
+        android:layout_alignBottom="@+id/ivPlayedRed"
+        android:src="@drawable/card_front" />
+
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPlayedWhite"
+        android:layout_below="@+id/up_left_container"
+        android:layout_toStartOf="@+id/ivPlayedBlue"
+        android:layout_alignBottom="@+id/ivPlayedBlue"
+        android:src="@drawable/card_front" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/settings"
+        android:id="@+id/btnSettings_board_greg"
+        android:layout_below="@+id/ivBombCounter"
+        android:layout_alignEnd="@+id/ivBombCounter"
+        android:layout_toEndOf="@+id/left_container"
+        android:layout_marginTop="25dp"
+        android:height="50dp"
+        android:onClick="gotoSettingsFromBoard"
+        android:clickable="true" />
+
+</RelativeLayout>

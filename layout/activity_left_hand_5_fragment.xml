@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="350dp"
+    tools:context="huecomundo.muhich.fireworks_prime.left_hand_5_fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivLeftHandC"
+        android:clickable="true"
+        android:onClick="giveClueAction4P"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/ivLeftHandD"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/card_back_hor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivLeftHandB"
+        android:clickable="true"
+        android:onClick="giveClueAction4P"
+        android:src="@drawable/card_back_hor"
+        android:layout_above="@+id/ivLeftHandC"
+        android:layout_alignStart="@+id/ivLeftHandC" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivLeftHandD"
+        android:clickable="true"
+        android:onClick="giveClueAction4P"
+        android:layout_below="@+id/ivLeftHandC"
+        android:layout_alignStart="@+id/ivLeftHandE"
+        android:src="@drawable/card_back_hor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivLeftHandE"
+        android:clickable="true"
+        android:onClick="giveClueAction4P"
+        android:layout_below="@+id/ivLeftHandD"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/card_back_hor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivLeftHandA"
+        android:clickable="true"
+        android:onClick="giveClueAction4P"
+        android:layout_above="@+id/ivLeftHandB"
+        android:layout_alignStart="@+id/ivLeftHandB"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/card_back_hor" />
+</RelativeLayout>

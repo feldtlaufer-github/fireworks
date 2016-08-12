@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="135dp"
+    tools:context="huecomundo.muhich.fireworks_prime.up_left_4_fragment">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpLeftHandC"
+        android:clickable="true"
+        android:onClick="giveClueActionC"
+        android:src="@drawable/card_back"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUpLeftHandB" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpLeftHandB"
+        android:clickable="true"
+        android:onClick="giveClueActionC"
+        android:src="@drawable/card_back"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUpLeftHandA"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpLeftHandA"
+        android:clickable="true"
+        android:onClick="giveClueActionC"
+        android:src="@drawable/card_back"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpLeftHandD"
+        android:clickable="true"
+        android:onClick="giveClueActionC"
+        android:src="@drawable/card_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/ivUpLeftHandC" />
+</RelativeLayout>

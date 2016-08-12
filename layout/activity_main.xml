@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="huecomundo.muhich.fireworks_prime.Main"
+    android:background="#36454f">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules/Credits"
+        android:id="@+id/btnRules_Credits_main"
+        android:textSize="32dp"
+        android:onClick="gotoRules_Credits"
+        android:layout_above="@+id/btnSettings_main"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:id="@+id/btnSettings_main"
+        android:textSize="32dp"
+        android:onClick="gotoSettings"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnRules_Credits_main"
+        android:layout_alignEnd="@+id/btnRules_Credits_main" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fireworks_image_large"
+        android:id="@+id/ivAppTitle"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        android:layout_above="@+id/btnStart"
+        android:layout_alignStart="@+id/btnStart"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/btnStart"
+        android:layout_marginBottom="32dp"
+        android:adjustViewBounds="false" />
+
+    <Button
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:id="@+id/btnStart"
+        android:textSize="32dp"
+        android:onClick="gotoGameMaker"
+        android:layout_above="@+id/btnRules_Credits_main"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

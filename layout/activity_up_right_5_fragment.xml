@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="400dp"
+    android:layout_height="135dp"
+    tools:context="huecomundo.muhich.fireworks_prime.up_right_5_fragment">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpRightHandC"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:onClick="giveClueActionD"
+        android:src="@drawable/card_back"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpRightHandD"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivUpRightHandC"
+        android:clickable="true"
+        android:onClick="giveClueActionD"
+        android:src="@drawable/card_back" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpRightHandE"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/ivUpRightHandD"
+        android:clickable="true"
+        android:onClick="giveClueActionD"
+        android:src="@drawable/card_back"
+        android:layout_marginLeft="10dp" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpRightHandB"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/ivUpRightHandC"
+        android:clickable="true"
+        android:onClick="giveClueActionD"
+        android:src="@drawable/card_back" />
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivUpRightHandA"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@+id/ivUpRightHandB"
+        android:clickable="true"
+        android:onClick="giveClueActionD"
+        android:src="@drawable/card_back"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

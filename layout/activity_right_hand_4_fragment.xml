@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="350dp"
+    tools:context="huecomundo.muhich.fireworks_prime.right_hand_4_fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/ivRightHandA"
+        android:src="@drawable/card_back_hor"
+        android:clickable="true"
+        android:onClick="giveClueActionF"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/ivRightHandB"
+        android:src="@drawable/card_back_hor"
+        android:clickable="true"
+        android:onClick="giveClueActionF"
+        android:layout_below="@+id/ivRightHandA"
+        android:layout_alignStart="@+id/ivRightHandA"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/ivRightHandD"
+        android:src="@drawable/card_back_hor"
+        android:clickable="true"
+        android:onClick="giveClueActionF"
+        android:layout_below="@+id/ivRightHandC"
+        android:layout_alignStart="@+id/ivRightHandC" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:id="@+id/ivRightHandC"
+        android:src="@drawable/card_back_hor"
+        android:clickable="true"
+        android:onClick="giveClueActionF"
+        android:layout_below="@+id/ivRightHandB"
+        android:layout_alignStart="@+id/ivRightHandB"
+        android:layout_marginBottom="10dp" />
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="150dp"
+    android:layout_height="350dp"
+    tools:context="huecomundo.muhich.fireworks_prime.right_hand_5_fragment">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivRightHandC"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/card_back_hor"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivRightHandB"
+        android:layout_above="@+id/ivRightHandC"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/card_back_hor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivRightHandA"
+        android:layout_above="@+id/ivRightHandB"
+        android:layout_alignStart="@+id/ivRightHandB"
+        android:layout_alignEnd="@+id/ivRightHandB"
+        android:clickable="true"
+        android:src="@drawable/card_back_hor"
+        android:layout_marginBottom="10dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivRightHandD"
+        android:layout_below="@+id/ivRightHandC"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/card_back_hor" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ivRightHandE"
+        android:layout_below="@+id/ivRightHandD"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:src="@drawable/card_back_hor"
+        android:layout_marginTop="10dp" />
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="huecomundo.muhich.fireworks_prime.Rules_Credits"
+    android:background="#36454f">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rules/Credits"
+        android:id="@+id/tvRules_Credits_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="42dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/backPressInfo"
+        android:id="@+id/tvBackPressInfo_rules_credits"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="24dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/rulesPage1"
+        android:id="@+id/tvRulesPageView"
+        android:layout_below="@+id/tvRules_Credits_title"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/tvBackPressInfo_rules_credits"
+        android:layout_above="@+id/btnPrev" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prev"
+        android:id="@+id/btnPrev"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:onClick="clickPrev" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next"
+        android:id="@+id/btnNext"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@+id/btnPrev"
+        android:onClick="clickNext" />
+
+</RelativeLayout>
